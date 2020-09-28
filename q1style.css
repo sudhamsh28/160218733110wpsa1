@@ -1,0 +1,71 @@
+.persinfo{
+    margin-left:2%;
+    border: violet 3px solid;
+    margin: 10px;
+    position: relative;
+}
+.persinfo:after{
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100px;
+    top: -15px;
+    left: 10px;
+    border: 15px solid white;
+}
+.persinfo:before{
+    content:"personal information";
+    display: inline-block;
+    position: absolute;
+}
+.block{
+    margin:15px;
+}
+.questions{
+    margin:15px;
+}
+button{
+    background-color: skyblue;
+}
+.questions{
+    scrollbar-arrow-color: skyblue;
+}
+.scrollable-element{
+    scrollbar-color: red yellow;
+}
+fieldset {
+    margin-left:2%;
+    border: violet 3px solid;
+    margin: 10px;
+    position: relative;
+}
+.gridcontainer{
+    display: grid;
+    display: inline-block;
+    background-color: #2196F3;
+    width:25%;
+    margin-left: 20px;
+}
+.griditem{
+    width:fit-content;
+    height:fit-content;
+}
+
+html {
+    --scrollbarBG:white;
+    --thumbBG:skyblue;
+  }
+  select::-webkit-scrollbar {
+    width: 21px;
+  }
+  select {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  select::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  select::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border: 3px solid var(--scrollbarBG);
+  }

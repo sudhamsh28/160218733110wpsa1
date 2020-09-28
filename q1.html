@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            1
+        </title>
+        <link href="q1style.css" rel="stylesheet">
+    </head>
+    <script>
+        function save(){
+            alert("Information saved");
+            
+        }
+    </script>
+    <body>
+        <form>
+            <fieldset>
+                <legend><b>Personal Information</b></legend>
+                <div>
+                    <div class="block" style="margin-top: 15px;">
+                        <label>Name*: </label>
+                        <input type="text" id="name" value="" placeholder="Last,first">
+                        <label>My secret Phase</label>
+                        <input type="password" id="password"><br>
+                    </div>
+                    <div class="block">
+                        <label>Email*: </label>
+                    <input type="text" value="" id="email">
+                    <label>Phone(No dashes): </label>
+                    <input type="text" id="number" maxlength="10" pattern="[0-9]"><br>
+                    </div>
+                    <div class="block">
+                        <label>When is your birthday</label>
+                    <input type="text" id="bday" style="nav-down: initial;nav-up: initial;" placeholder="mm/dd/yyyy">
+                    </div>  
+                </div>
+            </fieldset>
+            <div class="questions">
+                <label>What browser do you use:</label><br>
+                <input type="checkbox" id="c1">   
+                <label>Internet Explorer</label><br>
+                <input type="checkbox" id="c2">
+                <label>Firefox</label><br>
+                <input type="checkbox" id="c3">
+                <label>Chrome</label><br><br>
+                <label>Which animal is the coolest?</label><br>
+                    <input type="radio" name="a">
+                    <label>Cats</label><br>
+                    <input type="radio" name="a">
+                    <label>Dogs</label><br>
+                    <input type="radio" name="a">
+                    <label>Cows</label><br><br>
+                <label>How cool is it?</label>
+                <label>Not</label>
+                <input type="range" id="temprange"min="1" max="100" value="50" style="vertical-align: middle;">
+                <label>Very</label><br><br>
+                <label>Really, How Cool?</label>
+                <input type="number" min="1" max="10" id="coolness">
+                <label>What do u like to do?</label>
+                <select size="4">
+                    <option>Hike</option>
+                    <option>Bike</option>
+                    <option>Ski</option>
+                    <option>Play an Instrument</option>
+                    <option>listen to WPS class</option>
+                </select><br><br>
+                <label>What's your favourite colour?</label>
+                <input type="color">
+                <br><br>
+                <label>What's your favourite sports team?</label>
+                <input type="text" id="sportsteam"><br><br>
+                <label>More About U:</label><br>
+                <textarea id="aboutu" rows="2" columns="75" placeholder="(max 150 characters)" maxlength="150"1></textarea><br><br>
+                <label>WE WILL NOT SHARE ANY PERSONAL INFORMATION OBTAINED FROM U WITH ANY OTHER ORGANISATION.</label><br><br>
+                <input type="reset" value="Save it" onclick="save()" style="background-color: green;color: white;">
+                <input type="reset" value="Clear it"  style="background-color: red;color: white;">
+            </div>
+    </form>
+    </body>
+</html>
+
+
